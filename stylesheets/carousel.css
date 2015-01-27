@@ -40,7 +40,7 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 html, body {
-  height:80%;
+  height:100%;
   margin:0;
   padding:0%;
 }
@@ -65,15 +65,15 @@ html, body {
   background-size:cover;
 }
 .carousel .carousel-inner .bg1 {
-  background-image:url();
+  background-image:url(../img/b4.png);
   background-position: center top; 
 }
 .carousel .carousel-inner .bg2 {
-  background-image:url();
+  background-image:url(../img/new1.png);
   background-position: center center; 
 }
 .carousel .carousel-inner .bg3 {
-  background-image:url(l);
+  background-image:url(../img/new2.png);
   background-position: center bottom; 
 }
 
