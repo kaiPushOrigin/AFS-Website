@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>AFS Agency</title>
+
+    <!-- Bootstrap core CSS -->
+  <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+      <link href="stylesheets/carousel.css" rel="stylesheet">
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+
+
+<style>
+<!--<html,body{height:100%;}-->
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+</style>
+
+  <body>
+    <nav class="navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AFS Agency</a>
+          </div>
+          <div class="navbar-collapse collapse" id = "mainmenu">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#aboutUs">About Us</a></li>
+              <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+
+    <!-- Carousel
+    ================================================== -->
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item bg bg1 active">
+<div class="container">
+<div class="carousel-caption">
+  <h3>A growing agency representing fine lighting lines for residential projects, commercial applications and retail showrooms.</h3>
+</div>
+</div>
+</div>
+<div class="item bg bg2">
+<div class="container">
+<div class="carousel-caption">
+  <h3>Our clients include architects, designers, contractors, developers and lighting showrooms.</h3>
+</div>
+</div>
+</div>
+<div class="item bg bg3">
+<div class="container">
+<div class="carousel-caption">
+  <h3>AFS Agency will go the extra mile to help illuminate your lighting concerns. <h3>
+
+</div>
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+
+
+<div class="container">
+
+    <!-- START THE FEATURETTES -->
+
+        <center>
+          <img class="featurette-image img-responsive" data-src="img/2.png" onclick="changeImage()" src = "img/2.png" id = "afs" alt="Generic placeholder image">
+        </div>
+      </center>
+      <script>
+function changeImage() {
+    var image = document.getElementById('afs');
+    if (image.src.match("3")) {
+        image.src = "img/2.png";
+    } else {
+        image.src = "img/3.png";
+    }
+}
+</script>
+      <div id = "aboutUs">
+      <hr class="featurette-divider"> 
+      <h2 class="featurette-heading"> ABOUT US </h2>
+      <p class="lead">AFS Agency was created four years ago by Mark Sadofsky. Mark has been in the lighting industry since 1978. After a short absence, he decided to return to his passion. Realizing there was a gap in the industry for representation of lighting lines for retail, electrical wholesalers as well as designers and architects, AFS Agency was launched. <br /><br />
+
+In the fall of 2014, Mark partnered with Liz Moir to service both architects and designers with their comprehensive lighting lines. Liz has been in the lighting industry for 25 years and has certification with the American Lighting Association.<br /><br />
+
+Projects include White Point Beach, Victory Arms, Onyx, Flip Burger as well as multiple apartments and multi use buildings.
+</p></div>
+<div id = "contactUs">
+<hr class="featurette-divider">
+
+      <h2 class="featurette-heading"> CONTACT US </h2><br />
+      <p class="lead">Ph: 902-407-1885<br /><br />
+        Fax: 1-888-316-5855<br /><br />
+        Mark Sadofsky<br/>
+        Email: mark@afsagency.ca Ph: 902-483-1885 <br /><br />
+        Liz Moir <br />
+        Email: liz@afsagency.ca  Ph: 902-999-2759  <br /><br />
+</p></div><br />
+<hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 © AFS Agency. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-jasny/dist/js/docs.min.js"></script>
+  </body>
+</html>
