@@ -9,7 +9,7 @@ body {
 
 #afs {
 
-  width: 45%;
+  width: 25%;
 }
 
 
@@ -81,10 +81,6 @@ html, body {
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
