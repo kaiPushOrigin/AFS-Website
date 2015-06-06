@@ -12,10 +12,12 @@
     <title>AFS Agency</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="stylesheets/carousel.css" rel="stylesheet">
+    <!-- <link href="stylesheets/carousel.css" rel="stylesheet"> -->
   <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Almendra">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,7 +37,58 @@
 
 
 <style>
-#work {
+/*header {
+    height: 700px;
+    background-image: url(img/bgHeader.jpg);
+    width:100%;
+    z-index: 10;
+    color: #fff;
+    position: fixed;
+}
+*/
+#banner {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(img/bgHeader.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+
+}
+#bannerTitle {
+    padding-top: 30vh;
+    opacity: 1;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#bannerHeader {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 900px;
+    background: #ebebeb;
+    height: 1500px; /* Demo purposes */
+}
+
+
+/*#work {
   font-family: 'Almendra', serif;
   font-size: 30px;
 
@@ -71,7 +124,7 @@ font-size: 30px;
   font-size: 30px;
 
 }
-body {
+/*body {
   font-family: 'Titillium Web', serif;
         font-size: 17px;
         color: #FFF;
@@ -79,41 +132,76 @@ body {
         background-size: 100% auto;
         background-color: #666699;
     
-}
+}*/
 
 
-.carousel-caption{
+/*.carousel-caption{
     font-family: 'Josephin Slab', serif;
         font-size: 21px;
 }
 .carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
+.carousel-inner{height:100%;}*/
 </style>
 
-  <body>
+<body>
     <nav class="navbar-inverse navbar-default navbar-fixed-top">
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">AFS Agency</a>
-          </div>
-          <div class="navbar-collapse collapse" id = "mainmenu">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="lineCards.html">Line Cards</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AFS Agency</a>
+            </div>
+            <div class="navbar-collapse collapse" id = "mainmenu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="lineCards.html">Line Cards</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+            </div><!--/.nav-collapse -->
         </div>
-      </nav>
+    </nav>
+
+    <div id="banner">
+        <div id="bannerTitle">
+            AFS AGENCY
+        </div>
+        <div id="bannerHeader">
+        <br>A growing agency representing fine lighting lines for residential projects, <br>commercial applications and retail showrooms.
+        </div>
+    </div>
 
 
-    <!-- Carousel
+    <div id="content">
+    
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/t2.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
+                    <h2 id = "work">What We Do</h2>
+                    <p>AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/line.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
+                    <h2 id = "line">Line Cards</h2>
+                    <p>View the list of all our line cards/clients.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/about.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
+                    <h2 id = "contact">Contact Us</h2>
+                    <p>Lets connect with each other!</p>
+                    <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Details</a></p>
+                </div>
+            </div> <!-- end row -->
+
+                <!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -150,94 +238,10 @@ body {
   <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-
-
-    <!-- START THE FEATURETTES -->
-
-       <!-- <center>
-          <img  width = "20%" class="featurette-image img-responsive" data-src="img/2.png" onclick="changeImage()" src = "img/afs_logo.png" 
-          id = "afs" alt="Generic placeholder image">
         </div>
-      </center><br><br><br>-->
 
-     <br><br><br>
-     <div class="row">
-        
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/t2.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-          <h2 id = "work">What We Do</h2>
-          <p>AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.</p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/line.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-          <h2 id = "line">Line Cards</h2>
-          <p>View the list of all our line cards/clients.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/about.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-          <h2 id = "contact">Contact Us</h2>
-          <p>Lets connect with each other!</p>
-          <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Details</a></p>
-        </div>
-      </div>
+    </div>
 
-
-      </div><br><br><br><br>
-
-        
-
-
-      <!--<script>
-function changeImage() {
-    var image = document.getElementById('afs');
-    if (image.src.match("3")) {
-        image.src = "img/2.png";
-    } else {
-        image.src = "img/afs_logo.png";
-    }
-}</script>-->
-    <!--  <div id = "aboutUs">
-      <hr class="featurette-divider"> 
-      <h2 class="featurette-heading">ABOUT US</h2>
-      <p class="lead">AFS Agency was created four years ago by Mark Sadofsky. Mark has been in the lighting industry since 1978. After a short absence, he decided to return to his passion. Realizing there was a gap in the industry for representation of lighting lines for retail, electrical wholesalers as well as designers and architects, AFS Agency was launched. <br /><br />
-
-      In the fall of 2014, Mark partnered with Liz Moir to service both architects and designers with their comprehensive lighting lines. Liz has been in the lighting industry for 25 years and has certification with the American Lighting Association.<br /><br/>
-
-Projects include White Point Beach, Victory Arms, Onyx, Flip Burger as well as multiple apartments and multi use buildings.
-</p></div>
-<div id = "contactUs">
-<hr class="featurette-divider">
-
-      <h2 class="featurette-heading"> CONTACT US </h2><br />
-      <p class="lead">Ph: 902-407-1885<br /><br />
-        Fax: 1-888-316-5855<br /><br />
-        Mark Sadofsky<br/>
-        Email: mark@afsagency.ca Ph: 902-483-1885 <br /><br />
-        Liz Moir <br />
-        Email: liz@afsagency.ca  Ph: 902-999-2759  <br /><br />
-</p></div><br />
-<hr class="featurette-divider">-->
-
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-     <!-- <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 © AFS Agency. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>-->
-
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
