@@ -14,10 +14,12 @@
     <!-- Bootstrap core CSS -->
     <!-- <link href="stylesheets/carousel.css" rel="stylesheet"> -->
   <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="stylesheets/carousel.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Almendra">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,14 +48,24 @@
     position: fixed;
 }
 */
+body {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(img/newBg.jpg) no-repeat center center fixedß !important; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #banner {
     width: 100%;
     height: 100vh;
     position: fixed;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url(img/bgHeader.jpg) no-repeat center center fixed; 
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(img/newBg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -84,67 +96,41 @@
     position: relative;
     top: 900px;
     background: #ebebeb;
-    height: 1500px; /* Demo purposes */
-}
-
-
-/*#work {
-  font-family: 'Almendra', serif;
-  font-size: 30px;
+    height: 280px; /* Demo purposes */
 
 }
 
-#caption1 {
-font-family: 'Titillium Web', serif;
-color:  #FFF;
-font-size: 30px;
-}
-
-#caption2 {
-font-family: 'Titillium Web', serif;
-color:  #FFF;
-font-size: 30px;
-}
-
-#caption3 {
-font-family: 'Titillium Web', serif;
-color:  #FFF;
-font-size: 30px;
-}
-
-#line {
-  font-family: 'Almendra', serif;
-  font-size: 30px;
-
+.whatWeDo {
+    margin-top: -60px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(img/lightbulb-colours.jpg) no-repeat center center; 
+    height: 300px;
+    color: #FFF0A3;
+    font-size: 30px;
+    margin-left: 0px !important;
 
 }
 
-#contact {
-  font-family: 'Almendra', serif;
-  font-size: 30px;
-
+.navbar.transparent.navbar-inverse .navbar-inner {
+    color: transparent;
+    background: transparent;
+   
 }
-/*body {
-  font-family: 'Titillium Web', serif;
-        font-size: 17px;
-        color: #FFF;
-        background-image: url(img/bg3.jpg);
-        background-size: 100% auto;
-        background-color: #666699;
-    
-}*/
 
-
-/*.carousel-caption{
-    font-family: 'Josephin Slab', serif;
-        font-size: 21px;
+#aboutUs {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}*/
+
 </style>
 
 <body>
-    <nav class="navbar-inverse navbar-default navbar-fixed-top">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+        <nav class="navbar-inner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -164,6 +150,7 @@ font-size: 30px;
             </div><!--/.nav-collapse -->
         </div>
     </nav>
+    </div>
 
     <div id="banner">
         <div id="bannerTitle">
@@ -179,7 +166,7 @@ font-size: 30px;
     
         <div class="container">
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-4">
                     <img class="img-circle" src="img/t2.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
                     <h2 id = "work">What We Do</h2>
@@ -199,48 +186,21 @@ font-size: 30px;
                     <p>Lets connect with each other!</p>
                     <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Details</a></p>
                 </div>
-            </div> <!-- end row -->
-
-                <!-- Carousel
-    ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-  <div class="carousel-inner">
-  <div class="item bg bg1 active">
-  <div class="container">
-  <div class="carousel-caption">
-    <h3 id="caption1">AFS Agency will go the extra mile to help illuminate your lighting concerns. </h3>
-  </div>
-  </div>
-  </div>
-  <div class="item bg bg2">
-  <div class="container">
-  <div class="carousel-caption">
-    <h3 id="caption2">Our clients include architects, designers, contractors, developers and lighting showrooms.</h3>
-  </div>
-  </div>
-  </div>
-  <div class="item bg bg3">
-  <div class="container">
-  <div class="carousel-caption">
-    <h3 id="caption3">
-      A growing agency representing fine lighting lines for residential projects, commercial applications and retail showrooms.<h3>
-
-  </div>
-  </div>
-  </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-
+            </div> -->  <!-- end row -->
         </div>
 
+            <div class="whatWeDo">
+                
+                <div id="aboutUs" class="container">
+                    <h2 id="aboutUsTitle">ABOUT US</h2>
+                    AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </div>
+
+
 
 
 
