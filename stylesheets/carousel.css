@@ -64,17 +64,31 @@ html, body {
   background-repeat:no-repeat;
   background-size:cover;
 }
+
 .carousel .carousel-inner .bg1 {
-  background-image:url(../img/b4.png);
-  background-position: center top; 
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/bg.jpg);
+  background-position: center bottom; 
 }
+
+
 .carousel .carousel-inner .bg2 {
-  background-image:url(../img/new1.png);
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/new1.png);
   background-position: center center; 
 }
 .carousel .carousel-inner .bg3 {
-  background-image:url(../img/new2.png);
-  background-position: center bottom; 
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/b4.png); 
+  background-position: center top; 
 }
 
 /* MARKETING CONTENT

@@ -1,214 +1,283 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>AFS Agency</title>
+        <title>AFS Agency</title>
 
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="stylesheets/carousel.css" rel="stylesheet"> -->
-  <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
-  <link href="stylesheets/carousel.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Almendra">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap core CSS -->
+        <link href="stylesheets/carousel.css" rel="stylesheet">
+        <link href="stylesheets/animate.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Almendra">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+      <script src="js/wow.min.js"></script>
+      <script>
+         new WOW().init();
+      </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- Custom styles for this template -->
-      
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  </head>
-<!-- NAVBAR
-================================================== -->
+        <!-- Custom styles for this template -->
+          
 
-
-<style>
-/*header {
-    height: 700px;
-    background-image: url(img/bgHeader.jpg);
-    width:100%;
-    z-index: 10;
-    color: #fff;
-    position: fixed;
-}
-*/
-body {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),url(img/newBg.jpg) no-repeat center center fixedß !important; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#banner {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),url(img/newBg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: -1;
-
-}
-#bannerTitle {
-    padding-top: 30vh;
-    opacity: 1;
-    font-size: 70px;
-    color: white;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
-#bannerHeader {
-    z-index: 100;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#content {
-    padding-top: 50px;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    top: 900px;
-    background: #ebebeb;
-    height: 280px; /* Demo purposes */
-
-}
-
-.whatWeDo {
-    margin-top: -60px;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url(img/lightbulb-colours.jpg) no-repeat center center; 
-    height: 300px;
-    color: #FFF0A3;
-    font-size: 30px;
-    margin-left: 0px !important;
-
-}
-
-.navbar.transparent.navbar-inverse .navbar-inner {
-    color: transparent;
-    background: transparent;
-   
-}
-
-#aboutUs {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-</style>
-
-<body>
-    <div class="navbar transparent navbar-inverse navbar-fixed-top">
-        <nav class="navbar-inner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">AFS Agency</a>
-            </div>
-            <div class="navbar-collapse collapse" id = "mainmenu">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="lineCards.html">Line Cards</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                 </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-    </div>
-
-    <div id="banner">
-        <div id="bannerTitle">
-            AFS AGENCY
-        </div>
-        <div id="bannerHeader">
-        <br>A growing agency representing fine lighting lines for residential projects, <br>commercial applications and retail showrooms.
-        </div>
-    </div>
-
-
-    <div id="content">
-    
-        <div class="container">
-
-            <!-- <div class="row">
-                <div class="col-lg-4">
-                    <img class="img-circle" src="img/t2.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-                    <h2 id = "work">What We Do</h2>
-                    <p>AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.</p>
-                </div>
-
-                <div class="col-lg-4">
-                    <img class="img-circle" src="img/line.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-                    <h2 id = "line">Line Cards</h2>
-                    <p>View the list of all our line cards/clients.</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
-                </div>
-
-                <div class="col-lg-4">
-                    <img class="img-circle" src="img/about.png" alt="Generic placeholder image" style="width: 140px; height: 50%;">
-                    <h2 id = "contact">Contact Us</h2>
-                    <p>Lets connect with each other!</p>
-                    <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Details</a></p>
-                </div>
-            </div> -->  <!-- end row -->
-        </div>
-
-            <div class="whatWeDo">
-                
-                <div id="aboutUs" class="container">
-                    <h2 id="aboutUsTitle">ABOUT US</h2>
-                    AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.
-                </div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    </div>
-
-
-
-
-
-    <!-- Bootstrap core JavaScript
+      </head>
+    <!-- NAVBAR
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/bootstrap-jasny/dist/js/docs.min.js"></script>
-  </body>
-</html>
+
+    <style>
+    body {
+      margin-right: 0px;
+    }
+    .menu {
+        font-size: 17px;
+    }
+
+    .green {
+        color: #26A65B;
+    }
+    .yellow {
+        color: yellow;
+    }
+
+    .orange {
+        color: orange;
+    }
+    #afs {
+        padding-top: 100px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+/*        padding-top: 200px;*/
+        font-size: 70px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .copyright {
+      color: #fff;
+    }
+    #lighting {
+        padding-top: 0px;
+        font-style: italic;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+/*        padding-top: 200px;*/
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .briefcase, .user-plus{
+        font-size: 15px;
+    }
+    .content {
+        color: white;
+    }
+    .testOne {
+        color: #26A65B;
+            background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),url(img/bgHeader.jpg) no-repeat center center; 
+            margin-top: -80px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+    }
+
+    .testTwo {
+        color: #26A65B;
+            background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(img/bulb.jpg) no-repeat center center; 
+            margin-top: -85px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+    }
+
+    #work {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 30px;
+
+    }
+
+    #caption1 {
+    font-family: 'Titillium Web', serif;
+    color:  #FFF;
+    font-size: 30px;
+    }
+
+    #caption2 {
+    font-family: 'Titillium Web', serif;
+    color:  #FFF;
+    font-size: 30px;
+    }
+
+    #caption3 {
+    font-family: 'Titillium Web', serif;
+    color:  #FFF;
+    font-size: 30px;
+    }
+
+    #line {
+      font-family: 'Almendra', serif;
+      font-size: 30px;
+
+
+    }
+
+    #contact {
+      font-family: 'Almendra', serif;
+      font-size: 30px;
+
+    }
+    body {
+      font-family: 'Titillium Web', serif;
+            font-size: 20px;
+            color: #FFF;
+            background-size: 100% auto;
+            background-color: #666699;
+        
+    }
+
+    .carousel-caption{
+        font-family: 'Josephin Slab', serif;
+            font-size: 21px;
+    }
+    .carousel,.item,.active{height:100%;}
+    .carousel-inner{height:100%;}
+    </style>
+
+      <body>
+        <nav class="navbar-inverse navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AFS Agency</a>
+              </div>
+              <div class="navbar-collapse collapse" id = "mainmenu">
+                <ul class="nav navbar-nav menu">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="cards.html">Line Cards</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+
+
+        <!-- Carousel
+        ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      <div class="carousel-inner">
+      <div class="item bg bg1 active">
+        <h1 id="afs">AFS AGENCY</h1>
+        <h3 id="lighting"> <span class="green">where </span><span class="orange">lighting </span><span class="yellow">shines</span>. </h3>
+      <div class="container">
+      </div>
+      </div>
+      <div class="item bg bg2">
+      <div class="container">
+      <div class="carousel-caption">
+        <h3 id="caption2">Our clients include architects, designers, contractors, developers and lighting showrooms.</h3>
+      </div>
+      </div>
+      </div>
+      <div class="item bg bg3">
+      <div class="container">
+      <div class="carousel-caption">
+        <h3 id="caption3">
+          A growing agency representing fine lighting lines for residential projects, commercial applications and retail showrooms.<h3>
+
+      </div>
+      </div>
+      </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+
+
+
+         <div class="row testOne">
+            <div class="container marketing">
+            <div class="col-lg-4 wow animated bounceIn">
+                <i class="fa fa-5x fa-street-view" data-wow-delay=".2s" style="padding-top: 40px; visibility: visible; animation-name: bounceIn; -webkit-animation-name: bounceIn;"></i>
+            </div>
+            <div class="col-sm-8">
+                <h2 id = "work" class="wow animated fadeIn" data-wow-delay=".6s">WHAT WE DO</h2>
+              <p class="content wow animated fadeIn" data-wow-delay=".6s">AFS Agency is a lighting manufacturers representative of innovative residential and commercial luminaires. Based in Halifax, AFS Agency covers all of Atlantic Canada promoting and specifying quality lighting products. Our diverse product offering can help find lighting solutions for virtually every application.</p>
+            </div>
+        <br><br><br><br><br><br>
+     </div></div>
+
+
+
+  
+
+
+
+
+         <br><br><br>
+         <div class="row testTwo">
+            
+<div class="container marketing">
+            <div class="col-md-6 text-center">
+                <span class="briefcase">
+              <i class="fa fa-5x fa-briefcase wow animated bounceIn" data-wow-delay=".2s" style="padding-top: 40px; visibility: visible; animation-name: bounceIn; -webkit-animation-name: bounceIn;"></i></span>
+              <h2 id = "work" class="wow animated fadeIn" data-wow-delay=".6s">LINE CARDS</h2>
+              <p class="content wow animated fadeIn" data-wow-delay=".6s">View the list of our clients and the people <br>we have been working with.</p>
+              <p><a class="btn btn-success btn-lg" href="cards.html" role="button">View Linecards</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+                <span class="user-plus">
+              <i class="fa fa-5x fa-user-plus wow animated bounceIn" data-wow-delay=".1s" style="padding-top: 40px; visibility: visible; animation-name: bounceIn; -webkit-animation-name: bounceIn;"></i></span>
+              <h2 id = "work" class="wow animated fadeIn" data-wow-delay=".6s">CONTACT US</h2>
+              <p class="content wow animated fadeIn" data-wow-delay=".6s">Lets connect with each other!</p>
+              <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Details</a></p>
+            </div>
+          </div>
+
+<br><br><br><br><p class="copyright"align="center">Copyright 2015 &copy; AFS Agency</p> 
+          </div>
+
+        </div><!-- /.container -->
+
+        
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/bootstrap-jasny/dist/js/docs.min.js"></script>
+      </body>
+    </html>
